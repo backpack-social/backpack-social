@@ -6,4 +6,8 @@
 @tailwind utilities;
 
 @layer base {}
-@layer components {}
+@layer components {
+    .button1 {
+        @apply flex flex-row h-8 px-3 justify-center items-center border border-gray-200 rounded-lg bg-white text-powder_blue active:bg-gray-50/80 shadow-md font-nm font-[600] tracking-wide ease-in-out transition-all;
+    }
+}
