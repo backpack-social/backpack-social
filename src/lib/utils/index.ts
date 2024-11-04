@@ -19,7 +19,6 @@ export const getLocale = (navigatorLocale: string): string => {
     return loc
 };
 
-
 export const createLocalKeypair = async (): Promise<void> => {
     try {
         const secretKey = nostr.genSecretKey();

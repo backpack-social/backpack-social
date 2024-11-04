@@ -13,7 +13,7 @@
 >
 	<Nav />
 	<div
-		class={`flex flex-col h-full w-full pt-16 justify-start items-center bg-repeat heropattern-bubbles-gray-50/50`}
+		class={`flex flex-col h-full w-full max-lg:pt-20 pt-16 justify-start items-center bg-repeat heropattern-bubbles-gray-50/50`}
 	>
 		<slot />
 	</div>

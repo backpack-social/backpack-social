@@ -1,7 +1,8 @@
 <script lang="ts">
+	import { goto } from '$app/navigation';
 	import { t } from '$lib/locales';
 	import { nostrPublicKey } from '$lib/stores';
-	import { createLocalKeypair, deleteLocalKeypair } from '$lib/utils';
+	import { createLocalKeypair } from '$lib/utils';
 </script>
 
 <nav
@@ -18,12 +19,12 @@
 	<div class={`flex flex-row justify-start items-center`}>
 		{#if $nostrPublicKey}
 			<button
-				class={`button1`}
+				class={`button1 capitalize`}
 				on:click={async () => {
-					await deleteLocalKeypair();
+					await goto(`/profile`);
 				}}
 			>
-				{`delete keys`}
+				{`${$t(`common.view_profile`)}`}
 			</button>
 		{:else}
 			<button
