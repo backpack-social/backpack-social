@@ -32,3 +32,4 @@ yarn-error.log*
 notes*.txt
 _tmp*
 git-diff.txt
+.vercel
