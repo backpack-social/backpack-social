@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Scripto';
+    src: url('/fonts/scripto/Scripto.woff2') format('woff2'),
+        url('/fonts/scripto/Scripto.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

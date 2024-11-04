@@ -1,3 +1,6 @@
+@import "/static/fonts/neue-montreal/styles.css";
+@import "/static/fonts/scripto/styles.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
