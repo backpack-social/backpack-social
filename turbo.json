@@ -11,7 +11,8 @@
       ],
       "outputs": [
         ".svelte-kit/**",
-        ".vercel/**"
+        ".vercel/**",
+        "build"
       ]
     },
     "lint": {},
