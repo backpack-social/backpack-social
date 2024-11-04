@@ -4,6 +4,10 @@ import { get } from "svelte/store";
 import { initLocale, locales } from "../locales";
 import { nostr } from "./nostr-tool";
 
+export const rxp = {
+    websocketProto: /^(wss:\/\/|ws:\/\/)/
+}
+
 export let kv: Keyva;
 if (browser) kv = new Keyva({ name: `backpack-v1` });
 

@@ -1,7 +1,17 @@
 <script lang="ts">
 	import Nav from '$lib/components/nav.svelte';
 	import { t } from '$lib/locales';
+	import { ndk } from '$lib/stores';
+	import { onMount } from 'svelte';
 	import '../app.css';
+
+	onMount(async () => {
+		try {
+			await $ndk.connect().then(() => console.log(`[backpack] ndk connected`));
+		} catch (e) {
+		} finally {
+		}
+	});
 </script>
 
 <svelte:head>
